@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53CB96E2EF142F1605BD58FD /* Pods_Bookorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D653FD8DDB12DA9C13D44A /* Pods_Bookorm.framework */; };
 		B950491F29BBDE5B007BB1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950491E29BBDE5B007BB1FF /* AppDelegate.swift */; };
 		B950492129BBDE5B007BB1FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492029BBDE5B007BB1FF /* SceneDelegate.swift */; };
 		B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492229BBDE5B007BB1FF /* ViewController.swift */; };
@@ -17,9 +18,13 @@
 		B950493629BBE810007BB1FF /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = B950493529BBE810007BB1FF /* Profile.xib */; };
 		B961A94E29BBE8A3002D2B57 /* Detail.xib in Resources */ = {isa = PBXBuildFile; fileRef = B961A94D29BBE8A3002D2B57 /* Detail.xib */; };
 		C45216BF29C7E22B0031C300 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C45216BE29C7E22B0031C300 /* Alamofire */; };
+		C45216C129C7F33E0031C300 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45216C029C7F33E0031C300 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47F782B17F530E7B4393D3D3 /* Pods-Bookorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookorm.release.xcconfig"; path = "Target Support Files/Pods-Bookorm/Pods-Bookorm.release.xcconfig"; sourceTree = "<group>"; };
+		53D653FD8DDB12DA9C13D44A /* Pods_Bookorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8C9100BA89EB67530338F6 /* Pods-Bookorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookorm.debug.xcconfig"; path = "Target Support Files/Pods-Bookorm/Pods-Bookorm.debug.xcconfig"; sourceTree = "<group>"; };
 		B950491B29BBDE5B007BB1FF /* Bookorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B950491E29BBDE5B007BB1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B950492029BBDE5B007BB1FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		B950492F29BBDE5C007BB1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B950493529BBE810007BB1FF /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
 		B961A94D29BBE8A3002D2B57 /* Detail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Detail.xib; sourceTree = "<group>"; };
+		C45216C029C7F33E0031C300 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45216BF29C7E22B0031C300 /* Alamofire in Frameworks */,
+				53CB96E2EF142F1605BD58FD /* Pods_Bookorm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3958DF5605298B080F21778C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53D653FD8DDB12DA9C13D44A /* Pods_Bookorm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B950491229BBDE5B007BB1FF = {
 			isa = PBXGroup;
 			children = (
 				B950491D29BBDE5B007BB1FF /* Bookorm */,
 				B950491C29BBDE5B007BB1FF /* Products */,
+				E522B24639AD38507BB6C854 /* Pods */,
+				3958DF5605298B080F21778C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,8 +91,19 @@
 				B950492C29BBDE5C007BB1FF /* LaunchScreen.storyboard */,
 				B950492F29BBDE5C007BB1FF /* Info.plist */,
 				B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */,
+				C45216C029C7F33E0031C300 /* Database.swift */,
 			);
 			path = Bookorm;
+			sourceTree = "<group>";
+		};
+		E522B24639AD38507BB6C854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D8C9100BA89EB67530338F6 /* Pods-Bookorm.debug.xcconfig */,
+				47F782B17F530E7B4393D3D3 /* Pods-Bookorm.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B950493229BBDE5C007BB1FF /* Build configuration list for PBXNativeTarget "Bookorm" */;
 			buildPhases = (
+				44D00ABD721001DFCF9C42DA /* [CP] Check Pods Manifest.lock */,
 				B950491729BBDE5B007BB1FF /* Sources */,
 				B950491829BBDE5B007BB1FF /* Frameworks */,
 				B950491929BBDE5B007BB1FF /* Resources */,
+				7C7744A4455E1F5E69BB9AEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,7 +156,7 @@
 			);
 			mainGroup = B950491229BBDE5B007BB1FF;
 			packageReferences = (
-				C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = B950491C29BBDE5B007BB1FF /* Products */;
 			projectDirPath = "";
@@ -152,6 +182,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44D00ABD721001DFCF9C42DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bookorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7744A4455E1F5E69BB9AEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B950491729BBDE5B007BB1FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -160,6 +232,7 @@
 				B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */,
 				B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */,
 				B950491F29BBDE5B007BB1FF /* AppDelegate.swift in Sources */,
+				C45216C129C7F33E0031C300 /* Database.swift in Sources */,
 				B950492129BBDE5B007BB1FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +375,7 @@
 		};
 		B950493329BBDE5C007BB1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8C9100BA89EB67530338F6 /* Pods-Bookorm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +403,7 @@
 		};
 		B950493429BBDE5C007BB1FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F782B17F530E7B4393D3D3 /* Pods-Bookorm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,7 +453,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -391,7 +466,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		C45216BE29C7E22B0031C300 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = C45216BD29C7E22B0031C300 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
