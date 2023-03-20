@@ -17,8 +17,6 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
-                    <key>GoogleBooksAPIKey</key>
-                    <string>AIzaSyBtMNbQeN4QYNDfdbc6ezEC_fxQnkabJSU</string>
 				</dict>
 			</array>
 		</dict>
