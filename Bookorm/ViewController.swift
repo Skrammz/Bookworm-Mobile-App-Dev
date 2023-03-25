@@ -10,7 +10,7 @@ import SDWebImage
 
 class ViewController: UIViewController, UITableViewDataSource {
 
-    // Declare a UITableView outlet to connect to your storyboard
+    
     @IBOutlet weak var tableView: UITableView!
 
     var books: [Book] = []
