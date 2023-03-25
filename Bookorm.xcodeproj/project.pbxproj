@@ -13,10 +13,6 @@
 		B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492229BBDE5B007BB1FF /* ViewController.swift */; };
 		B950492629BBDE5B007BB1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B950492429BBDE5B007BB1FF /* Main.storyboard */; };
 		B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */; };
-		C4775E1029CF7D49009F2E12 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E0F29CF7D49009F2E12 /* SwiftyJSON */; };
-		C4775E1329CF7D7E009F2E12 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1229CF7D7E009F2E12 /* SDWebImage */; };
-		C4775E1629CF8080009F2E12 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1529CF8080009F2E12 /* SDWebImageSwiftUI */; };
-		C482D25429CF7BC1005AFD8F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C482D25329CF7BC1005AFD8F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4775E1629CF8080009F2E12 /* SDWebImageSwiftUI in Frameworks */,
-				C4775E1329CF7D7E009F2E12 /* SDWebImage in Frameworks */,
-				C4775E1029CF7D49009F2E12 /* SwiftyJSON in Frameworks */,
-				C482D25429CF7BC1005AFD8F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,23 +74,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B950493229BBDE5C007BB1FF /* Build configuration list for PBXNativeTarget "Bookorm" */;
 			buildPhases = (
-				569A769263608177F624CC13 /* [CP] Check Pods Manifest.lock */,
 				B950491729BBDE5B007BB1FF /* Sources */,
 				B950491829BBDE5B007BB1FF /* Frameworks */,
 				B950491929BBDE5B007BB1FF /* Resources */,
-				26645B8CC603A405E8CD856D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Bookorm;
-			packageProductDependencies = (
-				C482D25329CF7BC1005AFD8F /* Alamofire */,
-				C4775E0F29CF7D49009F2E12 /* SwiftyJSON */,
-				C4775E1229CF7D7E009F2E12 /* SDWebImage */,
-				C4775E1529CF8080009F2E12 /* SDWebImageSwiftUI */,
-			);
 			productName = Bookorm;
 			productReference = B950491B29BBDE5B007BB1FF /* Bookorm.app */;
 			productType = "com.apple.product-type.application";
@@ -127,12 +111,6 @@
 				Base,
 			);
 			mainGroup = B950491229BBDE5B007BB1FF;
-			packageReferences = (
-				C482D25229CF7BC1005AFD8F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				C4775E0E29CF7D49009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				C4775E1129CF7D7E009F2E12 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				C4775E1429CF8080009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-			);
 			productRefGroup = B950491C29BBDE5B007BB1FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,48 +131,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		26645B8CC603A405E8CD856D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bookorm/Pods-Bookorm-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		569A769263608177F624CC13 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bookorm-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B950491729BBDE5B007BB1FF /* Sources */ = {
@@ -412,64 +348,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C4775E0E29CF7D49009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		C4775E1129CF7D7E009F2E12 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		C4775E1429CF8080009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		C482D25229CF7BC1005AFD8F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C4775E0F29CF7D49009F2E12 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4775E0E29CF7D49009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		C4775E1229CF7D7E009F2E12 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4775E1129CF7D7E009F2E12 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		C4775E1529CF8080009F2E12 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4775E1429CF8080009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		C482D25329CF7BC1005AFD8F /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C482D25229CF7BC1005AFD8F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */ = {
