@@ -13,6 +13,10 @@
 		B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492229BBDE5B007BB1FF /* ViewController.swift */; };
 		B950492629BBDE5B007BB1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B950492429BBDE5B007BB1FF /* Main.storyboard */; };
 		B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */; };
+		C4775E1929CF8532009F2E12 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1829CF8532009F2E12 /* SDWebImageSwiftUI */; };
+		C4775E1C29CF853F009F2E12 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1B29CF853F009F2E12 /* SwiftyJSON */; };
+		C4775E1F29CF854D009F2E12 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1E29CF854D009F2E12 /* Alamofire */; };
+		C4775E2129CF8783009F2E12 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4775E2029CF8783009F2E12 /* APIFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,7 @@
 		B950492529BBDE5B007BB1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B950492829BBDE5B007BB1FF /* Bookorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookorm.xcdatamodel; sourceTree = "<group>"; };
 		B950492F29BBDE5C007BB1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4775E2029CF8783009F2E12 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4775E1F29CF854D009F2E12 /* Alamofire in Frameworks */,
+				C4775E1C29CF853F009F2E12 /* SwiftyJSON in Frameworks */,
+				C4775E1929CF8532009F2E12 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 		B950491229BBDE5B007BB1FF = {
 			isa = PBXGroup;
 			children = (
+				C4775E2029CF8783009F2E12 /* APIFunctions.swift */,
 				B950491D29BBDE5B007BB1FF /* Bookorm */,
 				B950491C29BBDE5B007BB1FF /* Products */,
 			);
@@ -83,6 +92,11 @@
 			dependencies = (
 			);
 			name = Bookorm;
+			packageProductDependencies = (
+				C4775E1829CF8532009F2E12 /* SDWebImageSwiftUI */,
+				C4775E1B29CF853F009F2E12 /* SwiftyJSON */,
+				C4775E1E29CF854D009F2E12 /* Alamofire */,
+			);
 			productName = Bookorm;
 			productReference = B950491B29BBDE5B007BB1FF /* Bookorm.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,11 @@
 				Base,
 			);
 			mainGroup = B950491229BBDE5B007BB1FF;
+			packageReferences = (
+				C4775E1729CF8532009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				C4775E1A29CF853F009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C4775E1D29CF854D009F2E12 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B950491C29BBDE5B007BB1FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +160,7 @@
 				B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */,
 				B950491F29BBDE5B007BB1FF /* AppDelegate.swift in Sources */,
 				B950492129BBDE5B007BB1FF /* SceneDelegate.swift in Sources */,
+				C4775E2129CF8783009F2E12 /* APIFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +368,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4775E1729CF8532009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C4775E1A29CF853F009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C4775E1D29CF854D009F2E12 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4775E1829CF8532009F2E12 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4775E1729CF8532009F2E12 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		C4775E1B29CF853F009F2E12 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4775E1A29CF853F009F2E12 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C4775E1E29CF854D009F2E12 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4775E1D29CF854D009F2E12 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */ = {
