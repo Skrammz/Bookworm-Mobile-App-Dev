@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import SwiftyJSON
+import SDWebImage
+
 
 class ViewController: UIViewController {
 
