@@ -48,7 +48,6 @@
 		B950491229BBDE5B007BB1FF = {
 			isa = PBXGroup;
 			children = (
-				C4775E2029CF8783009F2E12 /* APIFunctions.swift */,
 				B950491D29BBDE5B007BB1FF /* Bookorm */,
 				B950491C29BBDE5B007BB1FF /* Products */,
 			);
@@ -66,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				B9301AEE29CBADD000D13831 /* Assets.xcassets */,
+				C4775E2029CF8783009F2E12 /* APIFunctions.swift */,
 				B950491E29BBDE5B007BB1FF /* AppDelegate.swift */,
 				B950492029BBDE5B007BB1FF /* SceneDelegate.swift */,
 				B950492229BBDE5B007BB1FF /* ViewController.swift */,
