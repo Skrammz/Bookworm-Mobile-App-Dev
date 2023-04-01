@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class ViewController: UIViewController, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDataSource {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         return books.count
     }
     
-
+    //Connected in Book Table Cell and Detail View Controller
     class BookCell: UITableViewCell {
         
         @IBOutlet weak var titleLabel: UILabel!
@@ -55,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
     }
 
-
+    //Should this be moved??
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! BookCell
         let book = books[indexPath.row]

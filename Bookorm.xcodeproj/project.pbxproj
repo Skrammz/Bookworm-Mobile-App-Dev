@@ -10,9 +10,12 @@
 		B9301AEF29CBADD000D13831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9301AEE29CBADD000D13831 /* Assets.xcassets */; };
 		B950491F29BBDE5B007BB1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950491E29BBDE5B007BB1FF /* AppDelegate.swift */; };
 		B950492129BBDE5B007BB1FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492029BBDE5B007BB1FF /* SceneDelegate.swift */; };
-		B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492229BBDE5B007BB1FF /* ViewController.swift */; };
+		B950492329BBDE5B007BB1FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950492229BBDE5B007BB1FF /* MainViewController.swift */; };
 		B950492629BBDE5B007BB1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B950492429BBDE5B007BB1FF /* Main.storyboard */; };
 		B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */; };
+		B9F060FC29D2401600CC8B23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F060FB29D2401600CC8B23 /* DetailViewController.swift */; };
+		B9F060FE29D244E800CC8B23 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F060FD29D244E800CC8B23 /* ProfileViewController.swift */; };
+		B9F0610129D2490F00CC8B23 /* BookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F0610029D2490F00CC8B23 /* BookTableCell.swift */; };
 		C4775E1929CF8532009F2E12 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1829CF8532009F2E12 /* SDWebImageSwiftUI */; };
 		C4775E1C29CF853F009F2E12 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1B29CF853F009F2E12 /* SwiftyJSON */; };
 		C4775E1F29CF854D009F2E12 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C4775E1E29CF854D009F2E12 /* Alamofire */; };
@@ -24,10 +27,13 @@
 		B950491B29BBDE5B007BB1FF /* Bookorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B950491E29BBDE5B007BB1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B950492029BBDE5B007BB1FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B950492229BBDE5B007BB1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B950492229BBDE5B007BB1FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B950492529BBDE5B007BB1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B950492829BBDE5B007BB1FF /* Bookorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookorm.xcdatamodel; sourceTree = "<group>"; };
 		B950492F29BBDE5C007BB1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F060FB29D2401600CC8B23 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B9F060FD29D244E800CC8B23 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B9F0610029D2490F00CC8B23 /* BookTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableCell.swift; sourceTree = "<group>"; };
 		C4775E2029CF8783009F2E12 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,16 +70,35 @@
 		B950491D29BBDE5B007BB1FF /* Bookorm */ = {
 			isa = PBXGroup;
 			children = (
+				B9F060FF29D248BF00CC8B23 /* views */,
+				B9F060FA29D23FF400CC8B23 /* controllers */,
 				B9301AEE29CBADD000D13831 /* Assets.xcassets */,
 				C4775E2029CF8783009F2E12 /* APIFunctions.swift */,
 				B950491E29BBDE5B007BB1FF /* AppDelegate.swift */,
 				B950492029BBDE5B007BB1FF /* SceneDelegate.swift */,
-				B950492229BBDE5B007BB1FF /* ViewController.swift */,
 				B950492429BBDE5B007BB1FF /* Main.storyboard */,
 				B950492F29BBDE5C007BB1FF /* Info.plist */,
 				B950492729BBDE5B007BB1FF /* Bookorm.xcdatamodeld */,
 			);
 			path = Bookorm;
+			sourceTree = "<group>";
+		};
+		B9F060FA29D23FF400CC8B23 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B950492229BBDE5B007BB1FF /* MainViewController.swift */,
+				B9F060FB29D2401600CC8B23 /* DetailViewController.swift */,
+				B9F060FD29D244E800CC8B23 /* ProfileViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		B9F060FF29D248BF00CC8B23 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B9F0610029D2490F00CC8B23 /* BookTableCell.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B950492329BBDE5B007BB1FF /* ViewController.swift in Sources */,
+				B950492329BBDE5B007BB1FF /* MainViewController.swift in Sources */,
+				B9F0610129D2490F00CC8B23 /* BookTableCell.swift in Sources */,
 				B950492929BBDE5B007BB1FF /* Bookorm.xcdatamodeld in Sources */,
 				B950491F29BBDE5B007BB1FF /* AppDelegate.swift in Sources */,
+				B9F060FC29D2401600CC8B23 /* DetailViewController.swift in Sources */,
+				B9F060FE29D244E800CC8B23 /* ProfileViewController.swift in Sources */,
 				B950492129BBDE5B007BB1FF /* SceneDelegate.swift in Sources */,
 				C4775E2129CF8783009F2E12 /* APIFunctions.swift in Sources */,
 			);
